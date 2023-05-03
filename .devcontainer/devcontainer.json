@@ -1,0 +1,19 @@
+{
+  "name": "devcontainer-dotnet",
+  "build": {
+    "dockerfile": "../Dockerfile",
+    "context": ".",
+    "args": {
+      "VARIANT": "7.0-bullseye-slim"
+    }
+  },
+  "containerEnv": {
+    "TZ": "Asia/Tokyo"
+  },
+  "runArgs": ["--init"],
+  "customizations": {
+    "vscode": {
+      "extensions": []
+    }
+  }
+}
